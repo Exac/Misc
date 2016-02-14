@@ -33,16 +33,16 @@ class Color {
     public a():number {
         return this.alpha;
     }
-    public setR(_red:number) {
+    public setR(_red:number):void {
         this.bufferView[0] = this.to8Bit(_red);
     }
-    public setG(_green:number) {
+    public setG(_green:number):void {
         this.bufferView[1] = this.to8Bit(_green);
     }
-    public setB(_blue:number) {
+    public setB(_blue:number):void {
         this.bufferView[2] = this.to8Bit(_blue);
     }
-    public setA(_alpha:number) {
+    public setA(_alpha:number):void {
         if(_alpha > 1 || _alpha < -1) {
             _alpha = 1;
         }
