@@ -16,10 +16,10 @@ class Color {
         }
 
         this.bufferView = new Uint8Array(this.buffer, 0, 4);
-        this.bufferView[0] = _red;
-        this.bufferView[1] = _green;
-        this.bufferView[2] = _blue;
-        this.alpha = _alpha;
+        this.setR(_red);
+        this.setG(_green);
+        this.setB(_blue);
+        this.setA(_alpha);
     }
     public r():number {
         return this.bufferView[0];
